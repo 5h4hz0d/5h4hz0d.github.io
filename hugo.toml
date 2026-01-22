@@ -1,0 +1,18 @@
+baseURL = "https://5h4hz0d.github.io/"
+title = "Shahzod's Knowledge Base" # Oddiy nom
+theme = "hugo-blog-awesome"
+languageCode = "uz-uz"
+
+[params]
+  title_icon = "terminal"
+  defaultTheme = "dark"
+
+[[menu.main]]
+  name = "~/write-ups"
+  url = "/posts/"
+  weight = 1
+
+[[menu.main]]
+  name = "~/manuals"
+  url = "/manuals/"
+  weight = 2

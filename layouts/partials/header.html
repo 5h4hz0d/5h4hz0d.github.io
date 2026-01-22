@@ -1,0 +1,39 @@
+<header style="
+    background-color: #080808; /* Asosiy fondan (050505) biroz farq qiladi */
+    border-bottom: 1px solid #33ff00; /* Tagidagi chiziq - aniq YASHIL */
+    box-shadow: 0 5px 15px -5px rgba(51, 255, 0, 0.3); /* Yashil 'nur' (Glow effect) */
+    margin-bottom: 40px; /* Kontentdan uzoqlashtirish */
+    padding: 20px 0;
+    font-family: 'Courier New', monospace;
+    position: sticky; /* Tepada yopishib turishi uchun (ixtiyoriy) */
+    top: 0;
+    z-index: 1000;
+">
+    <div class="container" style="max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center;">
+        
+        <a href="/" style="text-decoration: none; color: #33ff00; font-weight: bold; font-size: 1.3rem; text-shadow: 0 0 8px rgba(51, 255, 0, 0.6); letter-spacing: -1px;">
+            ~/root
+        </a>
+
+        <nav>
+            <ul style="list-style: none; display: flex; margin: 0; padding: 0;">
+                {{ range .Site.Menus.main }}
+                <li style="margin-left: 30px;">
+                    <a href="{{ .URL }}" style="text-decoration: none; color: #e0e0e0; font-size: 1.1rem; transition: all 0.3s ease;">
+                        {{ .Name }}
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+
+<style>
+    /* Menyudagi linklarga sichqoncha borganda yashil bo'lib yonadi */
+    nav a:hover {
+        color: #33ff00 !important;
+        text-shadow: 0 0 8px #33ff00;
+    }
+</style>

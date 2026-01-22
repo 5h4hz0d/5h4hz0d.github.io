@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Write-ups on Shahzod&#39;s Knowledge Base</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Write-ups on Shahzod&#39;s Knowledge Base</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>uz-uz</language>
+    <lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Birinchi Post</title>
+      <link>http://localhost:1313/posts/birinchi-post/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/birinchi-post/</guid>
+      
+      <description>&lt;h2 id=&#34;salom-dunyo&#34;&gt;Salom, Dunyo!&lt;/h2&gt;
+&lt;p&gt;Bu mening kiberxavfsizlik bo&amp;rsquo;yicha shaxsiy blogim. Tez orada bu yerda:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HTB Writeups&lt;/li&gt;
+&lt;li&gt;PEN-200 tajribalarim&lt;/li&gt;
+&lt;li&gt;Linux bo&amp;rsquo;yicha qo&amp;rsquo;llanmalar bo&amp;rsquo;ladi.&lt;/li&gt;
+&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Test Write-up #1: Lorem Ipsum</title>
+      <link>http://localhost:1313/posts/test-1/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/test-1/</guid>
+      
+      <description>&lt;h1 id=&#34;h1-sarlavha-testi&#34;&gt;H1 Sarlavha Testi&lt;/h1&gt;
+&lt;p&gt;Bu yerda shunchaki test matn turibdi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;h3 id=&#34;h3-sarlavha&#34;&gt;H3 Sarlavha&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Ro‘yxat elementi 1&lt;/li&gt;
+&lt;li&gt;Ro‘yxat elementi 2&lt;/li&gt;
+&lt;li&gt;Ro‘yxat elementi 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bu post shunchaki shriftlar va oraliqlarni tekshirish uchun.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Test Write-up #2: Code Block Check</title>
+      <link>http://localhost:1313/posts/test-2/</link>
+      <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/test-2/</guid>
+      
+      <description>&lt;h1 id=&#34;kodni-tekshirish&#34;&gt;Kodni tekshirish&lt;/h1&gt;
+&lt;p&gt;Quyida Python kodi misol qilib keltirilgan:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;hello_world&lt;/span&gt;():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Salom, bu test!&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Quyida esa Bash kodi:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Test Write-up #3: Typography</title>
+      <link>http://localhost:1313/posts/test-3/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/test-3/</guid>
+      
+      <description>&lt;p&gt;Bu matn &lt;strong&gt;qalin&lt;/strong&gt; va bu matn esa &lt;em&gt;kursiv&lt;/em&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Bu iqtibos (blockquote) ko‘rinishini tekshirish uchun yozildi.
+Hackerona dizaynda bu qanday ko‘rinarkin?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Link testi: &lt;a href=&#34;https://google.com&#34;&gt;Google&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Web Security: SQL Injection Basics</title>
+      <link>http://localhost:1313/posts/test-sql-injection/</link>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/test-sql-injection/</guid>
+      
+      <description>&lt;h1 id=&#34;sql-injection-nima&#34;&gt;SQL Injection nima?&lt;/h1&gt;
+&lt;p&gt;Bu veb-saytning ma&amp;rsquo;lumotlar bazasiga ruxsatsiz so&amp;rsquo;rov yuborish usulidir.&lt;/p&gt;
+&lt;h3 id=&#34;payload-misoli&#34;&gt;Payload misoli:&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; OR 1=1 --
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Bu so&amp;rsquo;rov orqali admin panelga parolsiz kirish mumkin bo&amp;rsquo;lishi mumkin.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Web Security: Reflected XSS</title>
+      <link>http://localhost:1313/posts/test-xss-demo/</link>
+      <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/test-xss-demo/</guid>
+      
+      <description>&lt;h1 id=&#34;xss-cross-site-scripting&#34;&gt;XSS (Cross-Site Scripting)&lt;/h1&gt;
+&lt;p&gt;Agar sayt foydalanuvchi kiritgan ma&amp;rsquo;lumotni filtrlamasa, quyidagi kod ishga tushishi mumkin:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;script&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;alert&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Hacked!&amp;#39;&lt;/span&gt;);&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/script&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Bu cookie o&amp;rsquo;g&amp;rsquo;irlash uchun ishlatilishi mumkin.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>CTF: PicoCTF 2025 Write-up</title>
+      <link>http://localhost:1313/posts/test-ctf-challenge/</link>
+      <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/test-ctf-challenge/</guid>
+      
+      <description>&lt;h1 id=&#34;cryptography-challenge&#34;&gt;Cryptography Challenge&lt;/h1&gt;
+&lt;p&gt;Bizga shifrlangan matn berildi:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;V unir n synt&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Bu &lt;strong&gt;ROT13&lt;/strong&gt; shifrlash usuli edi. Uni dekodlash orqali bayroqni oldik:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I have a flag&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

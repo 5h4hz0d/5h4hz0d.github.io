@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Typography on Shahzod&#39;s Knowledge Base</title>
+    <link>http://localhost:1313/tags/typography/</link>
+    <description>Recent content in Typography on Shahzod&#39;s Knowledge Base</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>uz-uz</language>
+    <lastBuildDate>Tue, 20 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/typography/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Write-up #3: Typography</title>
+      <link>http://localhost:1313/posts/test-3/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/test-3/</guid>
+      
+      <description>&lt;p&gt;Bu matn &lt;strong&gt;qalin&lt;/strong&gt; va bu matn esa &lt;em&gt;kursiv&lt;/em&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Bu iqtibos (blockquote) ko‘rinishini tekshirish uchun yozildi.
+Hackerona dizaynda bu qanday ko‘rinarkin?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Link testi: &lt;a href=&#34;https://google.com&#34;&gt;Google&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

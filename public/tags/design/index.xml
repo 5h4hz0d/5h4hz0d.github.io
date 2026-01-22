@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on Shahzod&#39;s Knowledge Base</title>
+    <link>http://localhost:1313/tags/design/</link>
+    <description>Recent content in Design on Shahzod&#39;s Knowledge Base</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>uz-uz</language>
+    <lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Write-up #1: Lorem Ipsum</title>
+      <link>http://localhost:1313/posts/test-1/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/test-1/</guid>
+      
+      <description>&lt;h1 id=&#34;h1-sarlavha-testi&#34;&gt;H1 Sarlavha Testi&lt;/h1&gt;
+&lt;p&gt;Bu yerda shunchaki test matn turibdi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;h3 id=&#34;h3-sarlavha&#34;&gt;H3 Sarlavha&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Ro‘yxat elementi 1&lt;/li&gt;
+&lt;li&gt;Ro‘yxat elementi 2&lt;/li&gt;
+&lt;li&gt;Ro‘yxat elementi 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bu post shunchaki shriftlar va oraliqlarni tekshirish uchun.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

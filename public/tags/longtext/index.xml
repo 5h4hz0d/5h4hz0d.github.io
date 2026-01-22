@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LongText on Shahzod&#39;s Knowledge Base</title>
+    <link>http://localhost:1313/tags/longtext/</link>
+    <description>Recent content in LongText on Shahzod&#39;s Knowledge Base</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>uz-uz</language>
+    <lastBuildDate>Sun, 18 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/longtext/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Manual #2: Long Content</title>
+      <link>http://localhost:1313/manuals/test-man-2/</link>
+      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/manuals/test-man-2/</guid>
+      
+      <description>&lt;h1 id=&#34;uzun-matn-testi&#34;&gt;Uzun matn testi&lt;/h1&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

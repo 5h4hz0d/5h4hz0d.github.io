@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Table on Shahzod&#39;s Knowledge Base</title>
+    <link>http://localhost:1313/tags/table/</link>
+    <description>Recent content in Table on Shahzod&#39;s Knowledge Base</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>uz-uz</language>
+    <lastBuildDate>Mon, 19 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/table/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Manual #1: Table Layout</title>
+      <link>http://localhost:1313/manuals/test-man-1/</link>
+      <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/manuals/test-man-1/</guid>
+      
+      <description>&lt;h1 id=&#34;jadval-testi&#34;&gt;Jadval Testi&lt;/h1&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Buyruq&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Vazifasi&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Status&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;ls -la&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Fayllarni ko‘rish&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;✅ Ishladi&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;rm -rf&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Xavfli o‘chirish&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;⚠️ Xavfli&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;sudo&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Admin huquqi&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;🔒 Root&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Bu yerda jadval chiziqlari va ranglari tekshirilmoqda.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
