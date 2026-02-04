@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="uz-uz">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">CanaryTokens: Xakerlarni qopqonga tushiramiz | Shahzod&#39;s Knowledge Base</title>
+<meta property="og:title" content="CanaryTokens: Xakerlarni qopqonga tushiramiz | Shahzod&#39;s Knowledge Base" />
+<meta name="twitter:title" content="CanaryTokens: Xakerlarni qopqonga tushiramiz | Shahzod&#39;s Knowledge Base" />
+<meta itemprop="name" content="CanaryTokens: Xakerlarni qopqonga tushiramiz | Shahzod&#39;s Knowledge Base" />
+<meta name="application-name" content="CanaryTokens: Xakerlarni qopqonga tushiramiz | Shahzod&#39;s Knowledge Base" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="Soxta fayllar yordamida buzg&#39;unchilarni aniqlash va ularning joylashuvini topish.">
+<meta itemprop="description" content="Soxta fayllar yordamida buzg&#39;unchilarni aniqlash va ularning joylashuvini topish." />
+<meta property="og:description" content="Soxta fayllar yordamida buzg&#39;unchilarni aniqlash va ularning joylashuvini topish." />
+<meta name="twitter:description" content="Soxta fayllar yordamida buzg&#39;unchilarni aniqlash va ularning joylashuvini topish." />
+
+<meta property="og:locale" content="uz-uz" />
+<meta name="language" content="uz-uz" />
+
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/manuals/canarytokens-guide/" title="" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.152.2">
+
+    
+    <meta property="og:url" content="http://localhost:1313/manuals/canarytokens-guide/">
+  <meta property="og:site_name" content="Shahzod&#39;s Knowledge Base">
+  <meta property="og:title" content="CanaryTokens: Xakerlarni qopqonga tushiramiz">
+  <meta property="og:description" content="Soxta fayllar yordamida buzg&#39;unchilarni aniqlash va ularning joylashuvini topish.">
+  <meta property="og:locale" content="uz_uz">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="manuals">
+    <meta property="article:published_time" content="2026-02-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-02-03T00:00:00+00:00">
+    <meta property="article:tag" content="Active Defense">
+    <meta property="article:tag" content="Blue Team">
+    <meta property="article:tag" content="Security">
+    <meta property="article:tag" content="Manual">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CanaryTokens: Xakerlarni qopqonga tushiramiz">
+  <meta name="twitter:description" content="Soxta fayllar yordamida buzg&#39;unchilarni aniqlash va ularning joylashuvini topish.">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/manuals/canarytokens-guide/">
+    <link href="/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    
+</head>
+
+
+    <style>
+         
+        body {
+            background-color: #050505 !important;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+
+         
+        .container-wrapper {
+            max-width: 1100px;  
+            width: 95%;         
+            margin: 0 auto;     
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+         
+        main {
+            flex: 1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+
+         
+        header.main-header { display: none !important; }
+
+         
+        a { text-decoration: none; }
+
+         
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+         
+        .container-wrapper h1 {
+            margin-top: 10px !important;  
+            padding-top: 0 !important;
+        }
+    </style>
+</head>
+
+<body class="dark">
+
+    <header style="
+    background-color: #080808; /* Asosiy fondan (050505) biroz farq qiladi */
+    border-bottom: 1px solid #33ff00; /* Tagidagi chiziq - aniq YASHIL */
+    box-shadow: 0 5px 15px -5px rgba(51, 255, 0, 0.3); /* Yashil 'nur' (Glow effect) */
+    margin-bottom: 40px; /* Kontentdan uzoqlashtirish */
+    padding: 20px 0;
+    font-family: 'Courier New', monospace;
+    position: sticky; /* Tepada yopishib turishi uchun (ixtiyoriy) */
+    top: 0;
+    z-index: 1000;
+">
+    <div class="container" style="max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center;">
+        
+        <a href="/" style="text-decoration: none; color: #33ff00; font-weight: bold; font-size: 1.3rem; text-shadow: 0 0 8px rgba(51, 255, 0, 0.6); letter-spacing: -1px;">
+            ~/root
+        </a>
+
+        <nav>
+            <ul style="list-style: none; display: flex; margin: 0; padding: 0;">
+                
+                <li style="margin-left: 30px;">
+                    <a href="/posts/" style="text-decoration: none; color: #e0e0e0; font-size: 1.1rem; transition: all 0.3s ease;">
+                        ~/write-ups
+                    </a>
+                </li>
+                
+                <li style="margin-left: 30px;">
+                    <a href="/manuals/" style="text-decoration: none; color: #e0e0e0; font-size: 1.1rem; transition: all 0.3s ease;">
+                        ~/manuals
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+
+<style>
+     
+    nav a:hover {
+        color: #33ff00 !important;
+        text-shadow: 0 0 8px #33ff00;
+    }
+</style>
+
+    <main>
+        <div class="container-wrapper">
+            
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">CanaryTokens: Xakerlarni qopqonga tushiramiz</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2026-02-03T00:00:00&#43;00:00" itemprop="datePublished"> Feb 3, 2026 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <h1 id="himoya-faqat-kutish-degani-emas">Himoya faqat kutish degani emas</h1>
+<p>Kiberxavfsizlikda ko&rsquo;pchilik faqat &ldquo;devor qurish&rdquo; (firewall, antivirus) bilan shug&rsquo;ullanadi. Lekin haqiqiy himoyachi dushman ichkariga kirganini ham sezishi kerak.</p>
+<p><strong>CanaryTokens</strong> — bu xakerlar uchun raqamli qopqon. Tizimi: siz jozibali ko&rsquo;rinadigan soxta fayl (masalan, &ldquo;Pasportim&rdquo; yoki &ldquo;Parollar&rdquo;) yaratasiz va uni serveringizga tashlab qo&rsquo;yasiz. Agar kimdir bu faylni o&rsquo;g&rsquo;irlab, ochib ko&rsquo;rsa — <strong>Tamom!</strong> Sizga darhol uning IP manzili va qayerda ekanligi haqida xabar keladi.</p>
+<p>Bugun biz &ldquo;Moy_Pasport.docx&rdquo; nomli soxta fayl yasaymiz va u qanday ishlashini ko&rsquo;ramiz.</p>
+<hr>
+<h1 id="1-qadam-qopqonni-tayyorlash">1-qadam: Qopqonni tayyorlash</h1>
+<p>Buning uchun bizga hech qanday murakkab dastur kerak emas, hammasini <strong>CanaryTokens</strong> bepul servisi bajarib beradi.</p>
+<ol>
+<li><strong>Canarytokens.org</strong> saytiga kiring.</li>
+<li>Token turini tanlang: <strong>&ldquo;MS Word .docx&rdquo;</strong>.</li>
+<li><strong>Email</strong> manzilingizni kiriting (Xabar shu yerga keladi).</li>
+<li>Eslatma sifatida biror narsa yozing (Masalan: &ldquo;Mening Pasportim qopqoni&rdquo;).</li>
+</ol>
+<p><img src="1-setup.png" alt="1-rasm: Canarytokens.org saytida MS Word tanlangan va email kiritilgan holat"></p>
+<hr>
+<h1 id="2-qadam-oljani-joylashtirish">2-qadam: &ldquo;O&rsquo;lja&quot;ni joylashtirish</h1>
+<p>Sayt sizga <code>.docx</code> fayl yuklab beradi. Hozir bu fayl oddiy ko&rsquo;rinishda. Xakerni qiziqtirish uchun uning nomini o&rsquo;zgartiramiz.</p>
+<p>Fayl nomini <strong><code>Moy_Pasport.docx</code></strong> yoki <strong><code>Xodimlar_Oyligi.docx</code></strong> deb o&rsquo;zgartiring.</p>
+<p>Uni eng ko&rsquo;zga ko&rsquo;rinadigan joyga, masalan, <strong>Desktop</strong> (Ish stoli) yoki <strong>Documents</strong> papkasiga tashlab qo&rsquo;ying.</p>
+<p><img src="2-fayl.png" alt="2-rasm: Papkada turgan &lsquo;Moy_Pasport.docx&rsquo; fayli"></p>
+<hr>
+<h1 id="3-qadam-qopqonning-ishlash-prinsipi">3-qadam: Qopqonning ishlash prinsipi</h1>
+<p>Endi qiziq joyiga keldik. Xaker tizimingizga kirdi deylik. U minglab fayllar ichidan birinchi bo&rsquo;lib nimani qidiradi? Albatta, &ldquo;Pasport&rdquo;, &ldquo;Parol&rdquo; yoki &ldquo;Oylik maosh&rdquo; kabi so&rsquo;zlarni.</p>
+<p>U <code>Moy_Pasport.docx</code> faylini ko&rsquo;radi va xursand bo&rsquo;lib uni o&rsquo;z kompyuteriga ko&rsquo;chirib oladi.</p>
+<p>Faylni ochishi bilan, Word hujjati ichiga yashirilgan kichik kod (veb-bug) CanaryTokens serveriga signal yuboradi. Foydalanuvchi buni sezmaydi, hujjat oddiy ochiladi yoki &ldquo;Xatolik&rdquo; deb ko&rsquo;rsatadi.</p>
+<p>Keling, o&rsquo;zimiz faylni ochib ko&rsquo;ramiz (Sinov tariqasida).</p>
+<p><img src="3-open.jpg" alt="3-rasm: Word fayli ochilgan jarayon"></p>
+<hr>
+<h1 id="4-qadam-signalni-qabul-qilish">4-qadam: Signalni qabul qilish</h1>
+<p>Fayl ochilgan zahoti telefoningiz yoki kompyuteringizdagi pochtaga xabar keladi.</p>
+<p>Xabarda quyidagi ma&rsquo;lumotlar bo&rsquo;ladi:</p>
+<ul>
+<li><strong>Vaqt:</strong> Qachon ochilgani.</li>
+<li><strong>IP Manzil:</strong> Faylni ochgan odamning IP manzili.</li>
+<li><strong>Qurilma:</strong> Qanday brauzer yoki dastur ishlatgani.</li>
+</ul>
+<p><img src="4-alert.png" alt="4-rasm: Emailga kelgan xabar: Xarita, IP manzil va ogohlantirish ko&rsquo;ringan holat"></p>
+<hr>
+<h1 id="xulosa">Xulosa</h1>
+<p>Bu usul <strong>&ldquo;Active Defense&rdquo;</strong> (Faol Himoya) deb ataladi. Biz shunchaki hujum bo&rsquo;lishini kutib o&rsquo;tirmadik, balki dushmanni aniqlash uchun tuzoq qo&rsquo;ydik.</p>
+<p>Agar sizning serveringiz yoki kompyuteringizdan muhim hujjatlar o&rsquo;g&rsquo;irlansa, CanaryTokens orqali buni darhol bilib olasiz va chora ko&rsquo;rishga ulgurasiz.</p>
+<blockquote>
+<p><strong>Eslatma:</strong> Bu usul faqat qonuniy maqsadlarda, o&rsquo;zingizga tegishli tizimlarni himoya qilish uchun ishlatilishi kerak.</p>
+</blockquote>
+
+            </div>
+        </article></main>
+</div>
+
+        </div>
+    </main>
+
+    <footer style="margin-top: 50px; padding: 10px 0; border-top: 1px solid #333; font-family: 'Courier New', monospace; font-size: 0.9rem; color: #888; text-align: center;">
+    
+    <span style="background-color: #333; color: #fff; padding: 2px 8px; border-radius: 3px; margin-right: 10px;">
+        NORMAL MODE
+    </span>
+
+    <span>
+        coded by <span style="color: #2ecc71; font-weight: bold;">5h4hz0d</span> 
+    </span>
+    
+    <span style="margin: 0 10px;">|</span>
+    
+    <span>© 2026</span>
+
+    <span style="margin: 0 10px;">|</span>
+
+    <span>utf-8</span>
+
+</footer>
+
+</body>
+</html>

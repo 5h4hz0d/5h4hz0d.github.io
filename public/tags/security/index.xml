@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Shahzod&#39;s Knowledge Base</title>
+    <link>http://localhost:1313/tags/security/</link>
+    <description>Recent content in Security on Shahzod&#39;s Knowledge Base</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>uz-uz</language>
+    <lastBuildDate>Tue, 03 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CanaryTokens: Xakerlarni qopqonga tushiramiz</title>
+      <link>http://localhost:1313/manuals/canarytokens-guide/</link>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/manuals/canarytokens-guide/</guid>
+      
+      <description>&lt;h1 id=&#34;himoya-faqat-kutish-degani-emas&#34;&gt;Himoya faqat kutish degani emas&lt;/h1&gt;
+&lt;p&gt;Kiberxavfsizlikda ko&amp;rsquo;pchilik faqat &amp;ldquo;devor qurish&amp;rdquo; (firewall, antivirus) bilan shug&amp;rsquo;ullanadi. Lekin haqiqiy himoyachi dushman ichkariga kirganini ham sezishi kerak.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CanaryTokens&lt;/strong&gt; — bu xakerlar uchun raqamli qopqon. Tizimi: siz jozibali ko&amp;rsquo;rinadigan soxta fayl (masalan, &amp;ldquo;Pasportim&amp;rdquo; yoki &amp;ldquo;Parollar&amp;rdquo;) yaratasiz va uni serveringizga tashlab qo&amp;rsquo;yasiz. Agar kimdir bu faylni o&amp;rsquo;g&amp;rsquo;irlab, ochib ko&amp;rsquo;rsa — &lt;strong&gt;Tamom!&lt;/strong&gt; Sizga darhol uning IP manzili va qayerda ekanligi haqida xabar keladi.&lt;/p&gt;
+&lt;p&gt;Bugun biz &amp;ldquo;Moy_Pasport.docx&amp;rdquo; nomli soxta fayl yasaymiz va u qanday ishlashini ko&amp;rsquo;ramiz.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
