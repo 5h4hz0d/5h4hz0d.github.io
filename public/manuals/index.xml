@@ -6,58 +6,7 @@
     <description>Recent content in Manuals on Shahzod&#39;s Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>uz-uz</language>
-    <lastBuildDate>Mon, 19 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/manuals/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Test Manual #1: Table Layout</title>
-      <link>http://localhost:1313/manuals/test-man-1/</link>
-      <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/manuals/test-man-1/</guid>
-      
-      <description>&lt;h1 id=&#34;jadval-testi&#34;&gt;Jadval Testi&lt;/h1&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Buyruq&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Vazifasi&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Status&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;ls -la&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Fayllarni ko‘rish&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;✅ Ishladi&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;rm -rf&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Xavfli o‘chirish&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;⚠️ Xavfli&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;sudo&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Admin huquqi&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;🔒 Root&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Bu yerda jadval chiziqlari va ranglari tekshirilmoqda.&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Test Manual #2: Long Content</title>
-      <link>http://localhost:1313/manuals/test-man-2/</link>
-      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/manuals/test-man-2/</guid>
-      
-      <description>&lt;h1 id=&#34;uzun-matn-testi&#34;&gt;Uzun matn testi&lt;/h1&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
-&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</description>
-      
-    </item>
-    
+    <lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/manuals/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tool Guide: Burp Suite Setup</title>
       <link>http://localhost:1313/manuals/test-burp-guide/</link>
@@ -72,41 +21,6 @@
 &lt;li&gt;Brauzerda FoxyProxy orqali &lt;code&gt;127.0.0.1:8080&lt;/code&gt; manzilini kiriting.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Endi barcha trafik Burp orqali o&amp;rsquo;tadi.&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Linux Manual: File Permissions</title>
-      <link>http://localhost:1313/manuals/test-linux-perms/</link>
-      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/manuals/test-linux-perms/</guid>
-      
-      <description>&lt;h1 id=&#34;ruxsatlar-permissions&#34;&gt;Ruxsatlar (Permissions)&lt;/h1&gt;
-&lt;p&gt;Linuxda fayl ruxsatlari quyidagicha belgilanadi:&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Raqam&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Ma&amp;rsquo;nosi&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;7&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;O&amp;rsquo;qish, Yozish, Ishga tushirish (rwx)&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;5&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;O&amp;rsquo;qish va Ishga tushirish (r-x)&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;4&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Faqat o&amp;rsquo;qish (r&amp;ndash;)&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Misol: &lt;code&gt;chmod 777 script.sh&lt;/code&gt;&lt;/p&gt;</description>
       
     </item>
     

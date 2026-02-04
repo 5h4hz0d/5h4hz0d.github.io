@@ -6,19 +6,43 @@
     <description>Recent content in SQLi on Shahzod&#39;s Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>uz-uz</language>
-    <lastBuildDate>Wed, 14 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/sqli/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/sqli/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Web Security: SQL Injection Basics</title>
-      <link>http://localhost:1313/posts/test-sql-injection/</link>
-      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
+      <title>Walkthrough: Norc Labs (Linux)</title>
+      <link>http://localhost:1313/posts/norc-labs-writeup/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/test-sql-injection/</guid>
+      <guid>http://localhost:1313/posts/norc-labs-writeup/</guid>
       
-      <description>&lt;h1 id=&#34;sql-injection-nima&#34;&gt;SQL Injection nima?&lt;/h1&gt;
-&lt;p&gt;Bu veb-saytning ma&amp;rsquo;lumotlar bazasiga ruxsatsiz so&amp;rsquo;rov yuborish usulidir.&lt;/p&gt;
-&lt;h3 id=&#34;payload-misoli&#34;&gt;Payload misoli:&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; OR 1=1 --
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Bu so&amp;rsquo;rov orqali admin panelga parolsiz kirish mumkin bo&amp;rsquo;lishi mumkin.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;-machine-info&#34;&gt;🕵️ Machine Info&lt;/h1&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;IP Address&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;OS&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Vulnerabilities&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;10.15.0.49&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Linux&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;SQL Injection, RCE, Cron Job, Capabilities&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Qisqacha xulosa:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Sensitive Information Disclosure:&lt;/strong&gt; SQL Injection va himoyalanmagan subdomen orqali login va parollar fosh bo&amp;rsquo;lishi.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Remote Code Execution (RCE):&lt;/strong&gt; WordPress admin paneli orqali zararli plagin yuklash va kod ijro etish imkoniyati.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Insecure File Permissions:&lt;/strong&gt; &lt;code&gt;www-data&lt;/code&gt; foydalanuvchisi o&amp;rsquo;zgartira oladigan faylning Cron Job orqali ishga tushirilishi (Privilege Escalation).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Linux Capabilities Abuse:&lt;/strong&gt; &lt;code&gt;/opt/python3&lt;/code&gt; binar faylidagi &lt;code&gt;cap_setuid&lt;/code&gt; ruxsati orqali Root huquqini olish.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;1-bosqich-razvedka-reconnaissance&#34;&gt;1-Bosqich: Razvedka (Reconnaissance)&lt;/h1&gt;
+&lt;p&gt;Bizning birinchi ishimiz — nishonda qaysi portlar ochiqligini aniqlash. Buning uchun &lt;code&gt;nmap&lt;/code&gt; dan foydalanamiz.&lt;/p&gt;</description>
       
     </item>
     
