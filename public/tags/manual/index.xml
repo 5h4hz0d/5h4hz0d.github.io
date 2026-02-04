@@ -6,55 +6,21 @@
     <description>Recent content in Manual on Shahzod&#39;s Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>uz-uz</language>
-    <lastBuildDate>Mon, 19 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/manual/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/manual/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test Manual #1: Table Layout</title>
-      <link>http://localhost:1313/manuals/test-man-1/</link>
-      <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
+      <title>Steganografiya: Rasmlar ichiga ma&#39;lumot yashirish</title>
+      <link>http://localhost:1313/manuals/steganography-guide/</link>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/manuals/test-man-1/</guid>
+      <guid>http://localhost:1313/manuals/steganography-guide/</guid>
       
-      <description>&lt;h1 id=&#34;jadval-testi&#34;&gt;Jadval Testi&lt;/h1&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Buyruq&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Vazifasi&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Status&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;ls -la&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Fayllarni ko‘rish&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;✅ Ishladi&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;rm -rf&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Xavfli o‘chirish&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;⚠️ Xavfli&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;sudo&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Admin huquqi&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;🔒 Root&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Bu yerda jadval chiziqlari va ranglari tekshirilmoqda.&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Test Manual #2: Long Content</title>
-      <link>http://localhost:1313/manuals/test-man-2/</link>
-      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/manuals/test-man-2/</guid>
-      
-      <description>&lt;h1 id=&#34;uzun-matn-testi&#34;&gt;Uzun matn testi&lt;/h1&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
-&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;steganografiya-nima&#34;&gt;Steganografiya nima?&lt;/h1&gt;
+&lt;p&gt;Ko&amp;rsquo;pchilik &amp;ldquo;ma&amp;rsquo;lumotni himoyalash&amp;rdquo; deganda uni shifrlashni (kodlashni) tushunadi. Lekin shifrlangan faylga qaragan odam unda qandaydir sir borligini darhol sezadi.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Steganografiya&lt;/strong&gt; esa boshqacha ishlaydi. Uning maqsadi — ma&amp;rsquo;lumotning borligini umuman &lt;strong&gt;sezdirmaslik&lt;/strong&gt;. Masalan, siz oddiy manzarali rasmni birovga yuborasiz, lekin uning ichida maxfiy matn yoki fayl yashiringan bo&amp;rsquo;ladi. Tashqaridan qaraganda u shunchaki oddiy rasm.&lt;/p&gt;
+&lt;p&gt;Bugun Kali Linux tizimidagi mashhur &lt;code&gt;steghide&lt;/code&gt; vositasi yordamida buni qanday amalga oshirishni ko&amp;rsquo;rib chiqamiz.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;1-qadam-kerakli-fayllarni-tayyorlash&#34;&gt;1-qadam: Kerakli fayllarni tayyorlash&lt;/h1&gt;
+&lt;p&gt;Bizga tajriba uchun ikkita narsa kerak:&lt;/p&gt;</description>
       
     </item>
     

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Manuals on Shahzod&#39;s Knowledge Base</title>
-    <link>http://localhost:1313/manuals/</link>
-    <description>Recent content in Manuals on Shahzod&#39;s Knowledge Base</description>
+    <title>Privacy on Shahzod&#39;s Knowledge Base</title>
+    <link>http://localhost:1313/tags/privacy/</link>
+    <description>Recent content in Privacy on Shahzod&#39;s Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>uz-uz</language>
-    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/manuals/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Steganografiya: Rasmlar ichiga ma&#39;lumot yashirish</title>
       <link>http://localhost:1313/manuals/steganography-guide/</link>

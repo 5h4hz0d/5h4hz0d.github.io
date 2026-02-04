@@ -6,7 +6,24 @@
     <description>Recent content on Shahzod&#39;s Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>uz-uz</language>
-    <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Steganografiya: Rasmlar ichiga ma&#39;lumot yashirish</title>
+      <link>http://localhost:1313/manuals/steganography-guide/</link>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/manuals/steganography-guide/</guid>
+      
+      <description>&lt;h1 id=&#34;steganografiya-nima&#34;&gt;Steganografiya nima?&lt;/h1&gt;
+&lt;p&gt;Ko&amp;rsquo;pchilik &amp;ldquo;ma&amp;rsquo;lumotni himoyalash&amp;rdquo; deganda uni shifrlashni (kodlashni) tushunadi. Lekin shifrlangan faylga qaragan odam unda qandaydir sir borligini darhol sezadi.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Steganografiya&lt;/strong&gt; esa boshqacha ishlaydi. Uning maqsadi — ma&amp;rsquo;lumotning borligini umuman &lt;strong&gt;sezdirmaslik&lt;/strong&gt;. Masalan, siz oddiy manzarali rasmni birovga yuborasiz, lekin uning ichida maxfiy matn yoki fayl yashiringan bo&amp;rsquo;ladi. Tashqaridan qaraganda u shunchaki oddiy rasm.&lt;/p&gt;
+&lt;p&gt;Bugun Kali Linux tizimidagi mashhur &lt;code&gt;steghide&lt;/code&gt; vositasi yordamida buni qanday amalga oshirishni ko&amp;rsquo;rib chiqamiz.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;1-qadam-kerakli-fayllarni-tayyorlash&#34;&gt;1-qadam: Kerakli fayllarni tayyorlash&lt;/h1&gt;
+&lt;p&gt;Bizga tajriba uchun ikkita narsa kerak:&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Walkthrough: Norc Labs (Linux)</title>
       <link>http://localhost:1313/posts/norc-labs-writeup/</link>
@@ -43,23 +60,6 @@
 &lt;hr&gt;
 &lt;h1 id=&#34;1-bosqich-razvedka-reconnaissance&#34;&gt;1-Bosqich: Razvedka (Reconnaissance)&lt;/h1&gt;
 &lt;p&gt;Bizning birinchi ishimiz — nishonda qaysi portlar ochiqligini aniqlash. Buning uchun &lt;code&gt;nmap&lt;/code&gt; dan foydalanamiz.&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Tool Guide: Burp Suite Setup</title>
-      <link>http://localhost:1313/manuals/test-burp-guide/</link>
-      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/manuals/test-burp-guide/</guid>
-      
-      <description>&lt;h1 id=&#34;burp-suite-sozlash&#34;&gt;Burp Suite Sozlash&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Proxy&lt;/strong&gt; tabiga o&amp;rsquo;ting.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Intercept is on&lt;/strong&gt; tugmasini bosing.&lt;/li&gt;
-&lt;li&gt;Brauzerda FoxyProxy orqali &lt;code&gt;127.0.0.1:8080&lt;/code&gt; manzilini kiriting.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Endi barcha trafik Burp orqali o&amp;rsquo;tadi.&lt;/p&gt;</description>
       
     </item>
     
