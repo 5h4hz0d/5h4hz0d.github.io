@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kali Linux on Shahzod&#39;s Knowledge Base</title>
-    <link>http://localhost:1313/tags/kali-linux/</link>
-    <description>Recent content in Kali Linux on Shahzod&#39;s Knowledge Base</description>
+    <title>Recovery on Shahzod&#39;s Knowledge Base</title>
+    <link>http://localhost:1313/tags/recovery/</link>
+    <description>Recent content in Recovery on Shahzod&#39;s Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>uz-uz</language>
-    <lastBuildDate>Wed, 04 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/kali-linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/recovery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Foremost: O&#39;chirilgan fayllarni qayta tiklash</title>
       <link>http://localhost:1313/manuals/foremost-guide/</link>
@@ -21,23 +21,6 @@
 &lt;hr&gt;
 &lt;h1 id=&#34;1-vaziyat-fayl-yoqolganda-nima-qilish-kerak&#34;&gt;1. Vaziyat: Fayl yo&amp;rsquo;qolganda nima qilish kerak?&lt;/h1&gt;
 &lt;p&gt;Tasavvur qiling, sizda fleshka (USB Drive) bor va undagi muhim rasm yoki hujjat tasodifan o&amp;rsquo;chirib yuborildi.&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Steganografiya: Rasmlar ichiga ma&#39;lumot yashirish</title>
-      <link>http://localhost:1313/manuals/steganography-guide/</link>
-      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/manuals/steganography-guide/</guid>
-      
-      <description>&lt;h1 id=&#34;steganografiya-nima&#34;&gt;Steganografiya nima?&lt;/h1&gt;
-&lt;p&gt;Ko&amp;rsquo;pchilik &amp;ldquo;ma&amp;rsquo;lumotni himoyalash&amp;rdquo; deganda uni shifrlashni (kodlashni) tushunadi. Lekin shifrlangan faylga qaragan odam unda qandaydir sir borligini darhol sezadi.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Steganografiya&lt;/strong&gt; esa boshqacha ishlaydi. Uning maqsadi — ma&amp;rsquo;lumotning borligini umuman &lt;strong&gt;sezdirmaslik&lt;/strong&gt;. Masalan, siz oddiy manzarali rasmni birovga yuborasiz, lekin uning ichida maxfiy matn yoki fayl yashiringan bo&amp;rsquo;ladi. Tashqaridan qaraganda u shunchaki oddiy rasm.&lt;/p&gt;
-&lt;p&gt;Bugun Kali Linux tizimidagi mashhur &lt;code&gt;steghide&lt;/code&gt; vositasi yordamida buni qanday amalga oshirishni ko&amp;rsquo;rib chiqamiz.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;1-qadam-kerakli-fayllarni-tayyorlash&#34;&gt;1-qadam: Kerakli fayllarni tayyorlash&lt;/h1&gt;
-&lt;p&gt;Bizga tajriba uchun ikkita narsa kerak:&lt;/p&gt;</description>
       
     </item>
     

@@ -6,7 +6,24 @@
     <description>Recent content in Manual on Shahzod&#39;s Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>uz-uz</language>
-    <lastBuildDate>Tue, 03 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/manual/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/manual/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Foremost: O&#39;chirilgan fayllarni qayta tiklash</title>
+      <link>http://localhost:1313/manuals/foremost-guide/</link>
+      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/manuals/foremost-guide/</guid>
+      
+      <description>&lt;h1 id=&#34;delete-tugmasi-faylni-toliq-ochirmaydi&#34;&gt;&amp;ldquo;Delete&amp;rdquo; tugmasi faylni to&amp;rsquo;liq o&amp;rsquo;chirmaydi&lt;/h1&gt;
+&lt;p&gt;Ko&amp;rsquo;pchilik foydalanuvchilar faylni &amp;ldquo;Savat&amp;quot;dan (Recycle Bin) o&amp;rsquo;chirib yuborganda, u butunlay yo&amp;rsquo;qoladi deb o&amp;rsquo;ylashadi.&lt;/p&gt;
+&lt;p&gt;Aslida jarayon biroz boshqacha. Operatsion tizim faylni darhol o&amp;rsquo;chirib yubormaydi. U shunchaki diskdagi o&amp;rsquo;sha fayl joylashgan sektorlarni &amp;ldquo;bo&amp;rsquo;sh&amp;rdquo; deb belgilab qo&amp;rsquo;yadi. Agar o&amp;rsquo;sha joyga yangi ma&amp;rsquo;lumot yozilmasa, eski fayl uzoq vaqt davomida saqlanib turishi mumkin.&lt;/p&gt;
+&lt;p&gt;Bugun Kali Linux tizimidagi &lt;strong&gt;Foremost&lt;/strong&gt; vositasi yordamida o&amp;rsquo;chirilgan fayllarni qanday tiklash mumkinligini ko&amp;rsquo;rib chiqamiz.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;1-vaziyat-fayl-yoqolganda-nima-qilish-kerak&#34;&gt;1. Vaziyat: Fayl yo&amp;rsquo;qolganda nima qilish kerak?&lt;/h1&gt;
+&lt;p&gt;Tasavvur qiling, sizda fleshka (USB Drive) bor va undagi muhim rasm yoki hujjat tasodifan o&amp;rsquo;chirib yuborildi.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>CanaryTokens: Xakerlarni qopqonga tushiramiz</title>
       <link>http://localhost:1313/manuals/canarytokens-guide/</link>
