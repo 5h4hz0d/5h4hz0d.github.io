@@ -2,22 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/cookies/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/manual/</loc>
-    <lastmod>2026-02-05T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/manuals/</loc>
-    <lastmod>2026-02-05T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/session-hijacking/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/manuals/session-hijacking/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/web-security/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/osint/</loc>
     <lastmod>2026-02-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/security/</loc>
-    <lastmod>2026-02-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-02-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-02-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/virustotal/</loc>

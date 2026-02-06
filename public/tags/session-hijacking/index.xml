@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Session Hijacking on Shahzod&#39;s Knowledge Base</title>
+    <link>http://localhost:1313/tags/session-hijacking/</link>
+    <description>Recent content in Session Hijacking on Shahzod&#39;s Knowledge Base</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>uz-uz</language>
+    <lastBuildDate>Fri, 06 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/session-hijacking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Session Hijacking: Xakerga parolingiz kerak emas</title>
+      <link>http://localhost:1313/manuals/session-hijacking/</link>
+      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/manuals/session-hijacking/</guid>
+      
+      <description>&lt;h1 id=&#34;parol--eng-muhim-narsa-emas&#34;&gt;Parol — eng muhim narsa emas&lt;/h1&gt;
+&lt;p&gt;Ko&amp;rsquo;pchilik foydalanuvchilar o&amp;rsquo;z akkauntlarini himoya qilish uchun uzun va murakkab parollar o&amp;rsquo;ylab topishadi. &amp;ldquo;Menda 2 bosqichli himoya (2FA) bor, hech kim buzolmaydi&amp;rdquo;, deb xotirjam yurishadi.&lt;/p&gt;
+&lt;p&gt;Lekin achchiq haqiqat shundaki: &lt;strong&gt;Agar xaker sizning &amp;ldquo;Cookie&amp;rdquo; fayllaringizni qo&amp;rsquo;lga kiritsa, unga na loginingiz, na parolingiz va na SMS kodingiz kerak bo&amp;rsquo;ladi.&lt;/strong&gt; U to&amp;rsquo;g&amp;rsquo;ridan-to&amp;rsquo;g&amp;rsquo;ri sizning profilingizga kirib boradi.&lt;/p&gt;
+&lt;p&gt;Bugun biz &amp;ldquo;Session Hijacking&amp;rdquo; (Sessiyani o&amp;rsquo;g&amp;rsquo;irlash) qanday ishlashini va nima uchun havola (link) bosish bu jarayonning kaliti ekanligini ko&amp;rsquo;rib chiqamiz.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
