@@ -6,7 +6,24 @@
     <description>Recent content in Manuals on Shahzod&#39;s Knowledge Base</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>uz-uz</language>
-    <lastBuildDate>Wed, 04 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/manuals/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/manuals/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VirusTotal: Havolani bosish nega xavfli?</title>
+      <link>http://localhost:1313/manuals/virustotal/</link>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/manuals/virustotal/</guid>
+      
+      <description>&lt;h1 id=&#34;linkni-bosish--shunchaki-saytga-kirish-emas&#34;&gt;Linkni bosish — shunchaki saytga kirish emas&lt;/h1&gt;
+&lt;p&gt;Telegram yoki Email orqali kelgan notanish havolani (link) bosish — ko&amp;rsquo;chada yotgan fleshkani kompyuterga tiqish bilan barobar xavfli.&lt;/p&gt;
+&lt;p&gt;Ko&amp;rsquo;pchilik: &amp;ldquo;Men hech narsa yuklab olmadim-ku, shunchaki saytni ochib ko&amp;rsquo;rdim&amp;rdquo;, deb o&amp;rsquo;ylaydi. Lekin aslida havola bosilganda brauzeringiz yuzlab qator kodlarni avtomatik ishga tushiradi.&lt;/p&gt;
+&lt;p&gt;Bugun havolalar ortida qanday xavf yashiringani, &amp;ldquo;bosish&amp;rdquo; jarayonida texnik tomondan nima sodir bo&amp;rsquo;lishi va &lt;strong&gt;VirusTotal&lt;/strong&gt; yordamida buni qanday aniqlashni ko&amp;rsquo;rib chiqamiz.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;1-texnik-tahlil-linkni-bosganda-nima-boladi&#34;&gt;1. Texnik tahlil: Linkni bosganda nima bo&amp;rsquo;ladi?&lt;/h1&gt;
+&lt;p&gt;Havolani bosish — bu kompyuteringizga &amp;ldquo;Mana shu saytdagi barcha buyruqlarni bajar!&amp;rdquo; deb ruxsat berish degani. Bu jarayonda quyidagi xavflar bo&amp;rsquo;lishi mumkin:&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Foremost: O&#39;chirilgan fayllarni qayta tiklash</title>
       <link>http://localhost:1313/manuals/foremost-guide/</link>
