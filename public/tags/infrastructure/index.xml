@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Infrastructure on Shahzod&#39;s Knowledge Base</title>
+    <link>http://localhost:1313/tags/infrastructure/</link>
+    <description>Recent content in Infrastructure on Shahzod&#39;s Knowledge Base</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>uz-uz</language>
+    <lastBuildDate>Sat, 07 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Internet aslida nima? (To&#39;liq va sodda tushuntirish)</title>
+      <link>http://localhost:1313/manuals/internet/</link>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/manuals/internet/</guid>
+      
+      <description>&lt;h1 id=&#34;internet--bu-bulut-emas-bu-yerdagi-temir-va-simlar&#34;&gt;Internet — bu &amp;ldquo;Bulut&amp;rdquo; emas, bu yerdagi temir va simlar&lt;/h1&gt;
+&lt;p&gt;Biz ko&amp;rsquo;pincha &amp;ldquo;Internetga kirdim&amp;rdquo; yoki &amp;ldquo;Faylni bulutga (Cloud) yukladim&amp;rdquo; deymiz. Bu so&amp;rsquo;zlar odamlarda Internet xuddi havodagi ko&amp;rsquo;rinmas to&amp;rsquo;lqin, deb o&amp;rsquo;ylashiga sabab bo&amp;rsquo;ladi.&lt;/p&gt;
+&lt;p&gt;Haqiqat shundaki: &lt;strong&gt;Internet — bu yer osti va suv ostida yotgan millionlab kilometr qora kabellar.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Agar hozir shu maqolani o&amp;rsquo;qiyotgan bo&amp;rsquo;lsangiz, demak ma&amp;rsquo;lumotlar telefoningizga havoda uchib kelgani yo&amp;rsquo;q. Ular uzoq masofadan, aniq fizik yo&amp;rsquo;llar orqali yetib keldi. Keling, bu tizim qanday ishlashini savol-javob tarzida ko&amp;rsquo;rib chiqamiz.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
